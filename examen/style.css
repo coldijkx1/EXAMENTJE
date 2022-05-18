@@ -1,0 +1,193 @@
+/*body*/
+body {
+  color: white;
+background-image: url('Plaatjes/achtergrond.jpeg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+  background-size: cover;
+padding: 3em;background-color: #ccc;}
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+/*Navbar*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+/*Dit is de slideshow*/
+
+.slideshow {
+  width: 625px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: solid 1px white;
+}
+/*container waar slide in zit*/
+.slideshow-container {
+  width: 2500px;
+  font-size: 0;
+  transition: 1s ease;
+  height: 225px;
+}
+
+.slideshow-container:hover {
+  animation-play-state: paused;
+}
+
+img, .text-container {
+  width: 625px;
+  height: auto;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+}
+
+.text-container {
+  height: 225px;
+  position: relative;
+}
+
+
+p {
+  position: relative;
+  top: -45%;
+  padding: 5px;
+}
+
+.slide {
+  animation: slide 24s ease infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  
+  12.5% {
+    transform: translateX(0%);
+  }
+  
+  25% {
+    transform: translateX(-25%);
+  }
+  
+  37.5% {
+    transform: translateX(-25%);
+  }
+  
+  50% {
+    transform: translateX(-50%);
+  }
+  
+  62.5% {
+    transform: translateX(-50%);
+  }
+  
+  75% {
+    transform: translateX(-75%);
+  }
+  
+  87.5% {
+    transform: translateX(-75%);
+  }
+  
+  99% {
+    transform: translateX(-75%);
+  }
+  
+  100% {
+    transform: translateX(0);
+  }
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* de 2 blokken die naast elkaar staan */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /* stopt floatsPlaa */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  /*De foto upload pagina*/
+  .container{
+		display: flex;
+		width:calc(100%);
+		flex-wrap: wrap;
+	}
+	.container img{
+	    width: calc(18%);
+	    height: 15vw;
+	    object-fit: contain;
+	    background: gray;
+	    border: 1px solid black;
+	    margin: 5px;
+	}
+
+  /*kleur van het bericht in de inlog pagina's*/
+  .message {color: #FF0000;}
+
+  /*voor de admin page*/
+  .containeradmin {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    }
+  
+    .table, th, td {
+    border: 1px solid;
+    }
+
+    /*css voor het inschrijven voor een reis*/
+    .title{
+      font-size:30px;
+      color:#04AA6D;
+  }
+  .main{
+      width:60%;
+      padding:auto;
+      margin:auto;
+      background-color: gray;
+  }
+  .h20{
+      height:20px;
+  }
+  .h10{
+      height:10px;
+  }
+  .desc{
+      position:relative;
+      top:6px;
+  }
